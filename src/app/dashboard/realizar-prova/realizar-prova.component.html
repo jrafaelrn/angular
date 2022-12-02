@@ -1,0 +1,75 @@
+<header class="header">
+
+    <span class="home-bemvindo">
+        <img id="img-header" src="../../../assets/icons8-home-100 1.svg" (click)="navegar()">
+        <h1> Boa sorte </h1>
+    </span>
+
+    <span class="tempo">
+
+        <img id="img-tempo" src="../../../assets/icons8-expired-100 1.svg">
+        <h1 id="hora">{{ horas }} : {{ minutos }} : {{ segundos }}</h1>
+
+    </span>
+
+    <span class="home-bemvindo">
+        <img id="img-header" src="../../../assets/icons8-notification-100 1.svg" (click)="openDialogAviso()">
+        <img id="img-header" src="../../../assets/icons8-user-96 1.svg" (click)="openDialog()">
+    </span>
+
+</header>
+
+<body>
+
+    <div class="selecionar_provas">
+        <mat-form-field appearance="fill">
+            <mat-label>Provas</mat-label>
+            <mat-select>
+              <div *ngFor = "let p of provas">
+                <mat-option *ngIf="this.usuario.disciplina == p.disciplina" (click) = "escolher(p)" value="escolhido"> Título: {{ p.titulo }} ; Disciplina: {{ p.disciplina }}</mat-option>
+              </div>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    
+
+<main>
+    <div *ngFor = "let questao of prova.questao" class="main">
+        <div class="titulo">
+            <h2> Título: </h2>
+            <h2 class="h2_titulo"> {{ questao.titulo }} </h2>
+        </div>
+        <div class="titulo">
+            <h2> Enunciado: </h2>
+            <h2 class="h2_titulo"> {{ questao.enunciado }} </h2>
+        </div>
+        <h2> Resposta: </h2>
+
+        <div class="alternativas" *ngIf="questao.abertaOuFechada == 1">
+            <mat-radio-group aria-label="Select an option" class="select">
+                <mat-radio-button (click)="button(questao.alternativaA,questao.alternativaCorreta, questao.notaQuestao)" value="1">{{ questao.alternativaA }}</mat-radio-button>
+                <br>
+                <mat-radio-button (click)="button(questao.alternativaB,questao.alternativaCorreta, questao.notaQuestao)" value="2">{{ questao.alternativaB }}</mat-radio-button>
+                <br>
+                <mat-radio-button (click)="button(questao.alternativaC,questao.alternativaCorreta, questao.notaQuestao)" value="3">{{ questao.alternativaC }}</mat-radio-button>
+                <br>
+                <mat-radio-button (click)="button(questao.alternativaD,questao.alternativaCorreta, questao.notaQuestao)" value="4">{{ questao.alternativaD }}</mat-radio-button>
+                <br>
+            </mat-radio-group>
+        </div>
+
+        <div class="alternativas" *ngIf="questao.abertaOuFechada == 0">
+            <input matInput [(ngModel)]="questao.textoAberta" class="input">
+        </div>
+
+
+    </div>
+</main>
+
+    <div class="button" *ngIf="this.prova != undefined">
+        <button (click)=" navegar()">finalizar</button>
+    </div>
+
+
+</body>

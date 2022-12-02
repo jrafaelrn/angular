@@ -1,0 +1,7 @@
+{
+    "id": "1",
+    "nome": "Luiz",
+    "login": "string",
+    "senha": "string",
+    "tipo": "Professor"
+}

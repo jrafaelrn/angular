@@ -1,0 +1,59 @@
+<app-header></app-header>
+
+<body>
+
+    <div class="disciplina">
+
+        <span class="config">
+            <h2>Configurações Gerais</h2>
+        </span>
+        <span class="busca">
+            <h1>Grupo de Questões: </h1>
+            <input matInput [(ngModel)]="this.disciplina" class="input">
+        </span>
+        <span class="busca">
+            <h1>Título da Prova</h1>
+            <input matInput [(ngModel)]="this.titulo" class="input">
+        </span>
+    
+        <span class="lupa">
+            <img src="../../../assets/icons8-search-26 2.svg" (click)="button()">
+        </span>
+
+        
+    </div>
+
+    <div class="perguntas" *ngFor = "let questao of questoes">
+        <span>
+            <h1>Título: </h1>
+            <h3> {{ questao.titulo }}</h3>
+        </span>
+      
+        <span>
+            <h1>Tipo: </h1>
+            <h3 *ngIf="questao.abertaOuFechada == 0"> Aberta </h3>
+            <h3 *ngIf="questao.abertaOuFechada == 1"> Fechada </h3>
+        </span>
+
+        <span>
+            <h1>Enunciado: </h1>
+            <h3> {{ questao.enunciado }}</h3>
+        </span>
+
+        <div class="inferior">
+            <span>
+                <mat-checkbox (click)="array(questao)" color="primary">Selecionar Questão</mat-checkbox>
+            </span>
+            <span class="div_nota">
+                <input matInput [(ngModel)]="questao.notaQuestao" class="nota" type="number" placeholder="nota">
+            </span>
+        </div>
+        
+    </div>
+
+    <div class="button">
+        <button (click)="criarProva()">Criar Prova</button>
+    </div>
+
+
+</body>

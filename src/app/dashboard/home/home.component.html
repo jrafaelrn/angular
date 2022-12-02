@@ -1,0 +1,3 @@
+<app-header></app-header>
+<app-home-professor *ngIf="this.usuario.tipo == 'Professor'" [usuario]="usuario"></app-home-professor>
+<app-home-aluno *ngIf="this.usuario.tipo == 'Aluno'" [usuario]="usuario"></app-home-aluno> 

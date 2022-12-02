@@ -1,0 +1,246 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter';
+}
+
+/*menores que 480px*/
+.mat-typography h1 {
+    font-size: 12px;
+}
+
+.mat-typography h2 {
+    font-size: 12px;
+}
+
+.mat-typography p {
+    font-size: 10px;
+}
+
+header.header h1 {
+    font-size: 20px;
+}
+
+.mat-typography .container .input-field input {
+    width: 200px;
+    height: 50px;
+}
+
+.mat-typography form input[type="submit"] {
+    width: 100px;
+    height: 50px;
+
+}
+
+.mat-typography form input {
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.mat-typography #recuperar-senha {
+    width: 100px;
+    height: 30px;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.mat-typography .input-field input::placeholder {
+    width: 50px;
+    height: 25px;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.mat-typography .acesso-rapido-interno #icon1 {
+    width: 107px;
+    height: 31px;
+}
+
+.mat-typography .acesso-rapido-interno #icon2 {
+    width: 150px;
+    height: 31px;
+}
+
+.mat-typography .acesso-rapido-interno #icon3 {
+    width: 150px;
+    height: 31px;
+}
+
+
+/*480px - 768px = tablet*/
+@media (min-width: 480px) {
+    .mat-typography h1 {
+        font-size: 16px;
+    }
+
+    .mat-typography h2 {
+        font-size: 16px;
+    }
+
+    .mat-typography p {
+        font-size: 12px;
+    }
+
+    header.header h1 {
+        font-size: 30px;
+    }
+
+
+}
+
+/*768px - 1024px = telas menores, laptops*/
+@media (min-width: 768px) {
+    .mat-typography h1 {
+        font-size: 18px;
+    }
+
+    .mat-typography h2 {
+        font-size: 18px;
+    }
+
+    .mat-typography p {
+        font-size: 14px;
+    }
+
+    header.header h1 {
+        font-size: 40px;
+    }
+
+}
+
+
+/*1024px - 1200px = desktop*/
+@media (min-width: 1024px) {
+    .mat-typography h1 {
+        font-size: 22px;
+    }
+
+    .mat-typography h2 {
+        font-size: 22px;
+    }
+
+    .mat-typography p {
+        font-size: 18px;
+    }
+
+    header.header h1 {
+        font-size: 64px;
+    }
+
+    .mat-typography .container .input-field input {
+        width: 710px;
+        height: 100px;
+    }
+
+    .mat-typography form input[type="submit"] {
+        width: 270px;
+        height: 100px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .mat-typography form input {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .mat-typography #recuperar-senha {
+        width: 249px;
+        height: 30px;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .mat-typography .input-field input::placeholder {
+        width: 125px;
+        height: 58px;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    header .home-bemvindo h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .mat-typography .acesso-rapido-interno #icon1 {
+        width: 357px;
+        height: 81px;
+    }
+    
+    .mat-typography .acesso-rapido-interno #icon2 {
+        width: 476px;
+        height: 83px;
+    }
+    
+    .mat-typography .acesso-rapido-interno #icon3 {
+        width: 526px;
+        height: 91px;
+    }
+
+    .mat-typography span.titulo h1 {
+        width: 18vw;
+        height: 5vh;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 44px;
+    
+    }
+
+    
+    .mat-typography .acesso-rapido-interno #icon1-prof {
+        width: 443px;
+        height: 81px;
+    }
+    
+    .mat-typography .acesso-rapido-interno #icon2-prof {
+        width: 460px;
+        height: 81px;
+    }
+    
+    .mat-typography .acesso-rapido-interno #icon3-prof {
+        width: 377px;
+        height: 83px;
+    }
+    
+    .mat-typography .acesso-rapido-interno #icon4-prof {
+        width: 560px;
+        height: 76px;
+    }
+    
+    .mat-typography .acesso-rapido-interno #icon5-prof {
+        width: 496px;
+        height: 76px;
+    }
+
+
+
+}
+
+/*1200px e + = telas maiores, tvs*/
+@media (min-width: 1200px) {
+    .mat-typography h1 {
+        font-size: 26px;
+    }
+
+    .mat-typography h2 {
+        font-size: 26px;
+    }
+
+    .mat-typography p {
+        font-size: 22px;
+    }
+
+}

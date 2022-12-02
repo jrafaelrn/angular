@@ -1,0 +1,140 @@
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.disciplina {
+    width: 650px;
+    height: 230px;
+    background: #06AED5;
+    border-radius: 30px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.config {
+    width: 373px;
+    height: 44px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFF1D0;
+}
+
+.busca, .lupa {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+
+
+img {
+    text-decoration: none;
+    cursor: pointer;
+    border: #FFFFFF;
+}
+
+h1 {
+    width: 219px;
+    height: 29px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFF1D0;
+}
+
+input {
+    width: 280px;
+    height: 49px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: #FFFFFF;
+    text-align: center;
+}
+
+.perguntas {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: rgba(8, 103, 136, 0.5);
+    border-radius: 30px;
+    margin: 5%;
+}
+
+.perguntas span {
+    display: flex;
+    margin-top: 2%;
+
+}
+
+h3 {
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 20vw;
+    text-align: center;
+}
+
+button {
+    background: #086788;
+    border-radius: 30px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    color: #FFF1D0;
+    border: #FFF1D0;
+    margin-top: 5%;
+    height: 10vh;
+    width: 20vw;
+    margin-bottom: 5%;
+}
+
+.button {
+    text-align: center;
+    
+}
+
+button:hover {
+    font-size: 35px;
+}
+
+mat-checkbox {
+    font-family: 'Inter';
+    font-style: normal;;
+    color: #FFF1D0;
+}
+
+.nota {
+    border-radius: 30px;
+    width: 2vw;
+    height: 2vh;
+    text-align: center;
+    border: #FFFFFF;
+    text-align: center;
+}
+
+.inferior {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.lupa {
+    justify-content: flex-end;
+    width: 90%;
+}

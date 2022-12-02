@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    height: 90vh;
+    width: 90vw;
+    position: relative;
+    display: flex;
+}
+
+.acesso-rapido {
+    width: 650px;
+    height: 637px;
+    background: #06AED5;
+    border-radius: 30px;
+    display: grid;
+    align-items: flex-end;
+}
+
+
+.segundo {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.segundo .desempenho,
+.segundo .desempenho-numeros {
+    width: 36vw;
+    height: 27vh;
+    margin-left: 10%;
+    background: #E0DFDE;
+    border-radius: 30px;
+}
+
+.acesso-rapido-interno {
+    background: rgba(8, 103, 136, 0.5);
+    border-radius: 30px;
+    width: 650px;
+    height: 566px;
+}
+
+span.titulo,
+span.titulo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span.titulo h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    color: #FFF1D0;
+}
+
+.acesso-rapido-interno,
+.avisos-interno {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#icon1-prof,
+#icon2-prof,
+#icon3-prof,
+#icon4-prof,
+#icon5-prof {
+    cursor: pointer;
+    margin-left: 5%;
+}
+
+.desempenho,
+.desempenho-numeros {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#graficos {
+    width: 100%;
+    height: 15vh;
+}
+
+.desempenho h1 {
+    height: 29px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #F08865;
+}
+
+.numeros {
+    width: 150px;
+    height: 180px;
+}
+
+.desempenho-numeros {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.desempenho-numeros .numeros {
+    text-align: center;
+}
+
+.numeros h1 {
+    width: 111px;
+    height: 116px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 116px;
+    color: #F08865;
+}
+
+.numeros h2 {
+    width: 150px;
+    height: 58px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #F08865;}

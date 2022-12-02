@@ -1,0 +1,98 @@
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-provas {
+    width: 888px;
+    height: 771px;
+    background: rgba(255, 241, 208, 0.5);
+    border-radius: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-provas h1 {
+    width: 310px;
+    height: 44px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #086788;
+}
+
+.titulo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-interno {
+    width: 888px;
+    height: 700px;
+    background: #FFF1D0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    width: 834px;
+    height: 629px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+table th {
+    width: 111px;
+    height: 29px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #086788;
+    text-align: center;
+}
+
+table td {
+    font-family: 'Inter';
+    font-style: normal;
+    color: #086788;
+}
+
+.loading-spinner {
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.button {
+    text-align: end;
+}
+
+button {
+    width: 346px;
+    height: 64px;
+    background: #06AED5;
+    border-radius: 30px;
+    border: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFF1D0;
+    cursor: pointer;
+
+}

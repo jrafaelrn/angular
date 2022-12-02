@@ -1,0 +1,17 @@
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.graficos {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    border-radius: 30px;
+    margin-top: 5%;
+}

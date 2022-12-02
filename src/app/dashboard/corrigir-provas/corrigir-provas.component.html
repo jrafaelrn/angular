@@ -1,0 +1,29 @@
+<app-header></app-header>
+
+<body>
+    <main>
+        <div *ngFor="let prova of provas" class="main">
+            <div class="titulo">
+                <h2> Data de realização: </h2>
+                <h2 class="h2_titulo"> {{ prova.data }} </h2>
+            </div>
+            <div class="titulo">
+                <h2> Nusp do Aluno: </h2>
+                <h2 class="h2_titulo"> {{ prova.idAluno }} </h2>
+            </div>
+            <div class="titulo">
+                <h2> Disciplina: </h2>
+                <h2 class="h2_titulo"> {{ prova.disciplina }} </h2>
+            </div>
+            <div class="button">
+                <button (click)="corrigir(prova)">Corrigir</button>
+            </div>
+        </div>
+        
+    </main>
+
+    <div class="provas" *ngIf="this.provas?.length == 0">
+        <h1>Sem provas para corrigir.</h1>
+    </div>
+
+</body>

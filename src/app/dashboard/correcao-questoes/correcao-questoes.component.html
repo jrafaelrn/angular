@@ -1,0 +1,56 @@
+<app-header></app-header>
+
+
+<body>
+    <main>
+        <div class="main">
+            <div class="titulo">
+                <h2> Data de realização: </h2>
+                <h2 class="h2_titulo"> {{ prova.data }} </h2>
+            </div>
+            <div class="titulo">
+                <h2> Nusp do Aluno: </h2>
+                <h2 class="h2_titulo"> {{ prova.idAluno }}</h2>
+            </div>
+            <div class="titulo">
+                <h2> Disciplina: </h2>
+                <h2 class="h2_titulo"> {{ prova.disciplina }} </h2>
+            </div>
+
+
+            <div *ngFor = "let questao of prova.questoes" class="main">
+                <div class="titulo">
+                    <h2> Título: </h2>
+                    <h2 class="h2_titulo"> {{ questao.titulo }} </h2>
+                </div>
+                <div class="titulo">
+                    <h2> Enunciado: </h2>
+                    <h2 class="h2_titulo"> {{ questao.enunciado }} </h2>
+                </div>
+                <h2> Resposta: </h2>
+        
+                <div class="alternativas" *ngIf="questao.abertaOuFechada == 0">
+                    {{ questao.textoAberta }}
+                </div>
+                <div class="div_nota" *ngIf="questao.abertaOuFechada == 0">
+                    <input matInput [(ngModel)]="questao.notaQuestaoAberta" class="nota" type="number" placeholder="nota">
+                    <h3> Essa questão vale {{ questao.notaQuestao }}</h3>
+                </div>
+
+                <div style="text-align: center">
+                    <h3 *ngIf="questao.abertaOuFechada == 1">Questão já respondida.</h3>
+                </div>
+
+                <div id="linha"></div>
+        
+    
+            </div>
+
+            <div class="button">
+                <button (click)="finalizar()">Finalizar Correção</button>
+            </div>
+        </div>
+        
+    </main>
+
+</body>

@@ -1,0 +1,39 @@
+body {
+    width: 343px;
+    height: 377.5px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+span:hover {
+    background: #FFF1D0;
+    border-radius: 30px;
+}
+
+span h1 {
+    margin-top: 10%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+    text-decoration-line: underline;    
+    color: #086788;
+}

@@ -1,0 +1,7 @@
+<body>
+  <h1 mat-dialog-title class="titulo">Digite sua mensagem</h1>
+  <input matInput [(ngModel)]="msg.mensagem" class="texto">
+  <div class="button" mat-dialog-actions>
+    <button class="send" (click)="onSucess()" color="primary" mat-dialog-close>Enviar</button>
+  </div>
+</body>

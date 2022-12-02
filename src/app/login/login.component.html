@@ -1,0 +1,46 @@
+<header class="header">
+    <h1>Sistema de Avaliação Online</h1>
+</header>
+
+<body>
+
+    <main class="container">
+        <form [formGroup]="form" class="formulario-login">
+            <div class="input-field">
+                <input matInput type="text" name="username" id="username" placeholder="Login" formControlName="usuario">
+            </div>
+            <div class="input-field">
+                <input matInput type="password" name="password" id="password" placeholder="Senha"
+                    formControlName="senha">
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Acessar" (click)="logar()">
+                <input type="submit" value="Cadastrar" (click)="openDialog()">
+            </div>
+
+            <a id="recuperar-senha" href="#">Esqueci minha senha</a>
+        </form>
+
+        <div class="footer">
+            <div class="ou">
+                <div id="linha"></div>
+                <span> OU </span>
+                <div id="linha"></div>
+            </div>
+
+            <div class="social-fields">
+                <div class="google">
+                    <a href="#">
+                        <img id="icon" src="../../assets/login-google 4.svg">
+                    </a>
+                </div>
+                <div class="facebook">
+                    <a href="#">
+                        <img id="icon" src="../../assets/login-facebook 2.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>

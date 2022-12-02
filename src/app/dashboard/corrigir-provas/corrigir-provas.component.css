@@ -1,0 +1,92 @@
+.main {
+    margin-top: 5%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: #FFF1D0;
+    border-radius: 30px;
+}
+
+main {
+    background: rgba(255, 241, 208, 0.5);
+    border-radius: 30px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40vw;
+    margin-top: 5%;
+}
+
+.h2_titulo {
+    background: #FFFFFF;
+    text-align: center;
+    border-radius: 20px;
+    width: 30vw;
+}
+
+h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #086788;
+}
+
+
+.alternativas .select {
+    display: grid;
+}
+
+.input {
+    width: 501px;
+    height: 299px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 5%;
+}
+
+button {
+    background: #086788;
+    border-radius: 30px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    color: #FFF1D0;
+    border: #FFF1D0;
+    margin-top: 5%;
+    height: 10vh;
+    width: 20vw;
+    margin-bottom: 5%;
+}
+
+.button {
+    text-align: center;
+    
+}
+
+button:hover {
+    font-size: 35px;
+}
+
+.provas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #086788;
+    font-weight: bold;
+    margin-top: 20%;
+}

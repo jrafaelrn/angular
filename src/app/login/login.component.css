@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+.header {
+    background-color: #0c648c;
+    min-height: 15vh;
+    width: 100%;
+    background: #086788;
+    border-radius: 0px 0px 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 77px;
+    color: #FFF1D0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.input-field {
+    text-align: center;
+    align-items: center;
+}
+
+.container .input-field input {
+    background: #FFF1D0;
+    border-radius: 30px;
+    margin-bottom: 5%;
+    border: #FFF1D0;
+}
+
+.container {
+    margin-bottom: 15%;
+    height: 60vh;
+}
+
+.input-field input::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    color: #8C8C8C;
+}
+
+form input[type="submit"] {
+    background: #086788;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    color: #FFF1D0;
+    border: #FFF1D0;
+}
+
+form input {
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 1px;
+    background: #8C8C8C;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1%;
+}
+
+#recuperar-senha {
+    margin: 10%;
+    font-family: 'Inter';
+    font-style: normal;
+    text-decoration-line: underline;
+    color: #F0C808;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+
+.footer span {
+    text-align: center;
+    border: 1px solid;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #086788;
+    border: 20px solid #FFFFFF;
+
+}
+
+div.ou {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.footer #linha {
+    width: 24vw;
+    height: 0px;
+    border: 1px solid #086788;
+}
+
+div.social-fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#icon {
+    height: 100%;
+    width: 100%;
+}
